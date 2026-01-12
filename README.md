@@ -8,6 +8,6 @@ Nota importante: Para poder ejecutar muy bien el programa es necesaio descargar 
 1. Primero hay que insertar estos links en Preferencias -> URLs adicionales de gestor de placas: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 https://raw.githubusercontent.com/ricardoquesada/esp32-arduino-lib-builder/master/bluepad32_files/package_esp32_bluepad32_index.json
 
-Esto hara qye pueda usarse las placas y la liberia de BluePad32
+2: Hay que descargar Arduino AVR Boards de Arduino y Arduino ESP32 Board de Arduino. Esto hara que se implenten mas las placas de uso para el ESP32.
 
-2: Hay que descargar Arduino AVR Boards de Arduino y Arduino ESP32 Board de Arduino. Esto hara que se implenten mas las placas de uso para el ESP32
+3: Descargar e instalar la biblioteca Bluepad32, con esto se podra usar la liberia de BluePad32.
