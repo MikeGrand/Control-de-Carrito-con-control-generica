@@ -109,12 +109,12 @@ void loop() {
     int rx = myGamepad->axisRX();
 
     if (rx > 50) { // Derecha
-      int vel = map(rx, 50, 512, 255, 255); // Máximo PWM
+      int vel = map(rx, 50, 512, 255, 255); 
       girarDerecha(vel);
       Serial.println("Volante derecha");
     } 
-    else if (rx < -50) { // Izquierda
-      int vel = map(rx, -512, -50, 255, 255); // Máximo PWM
+    else if (rx < -50) { 
+      int vel = map(rx, -512, -50, 255, 255); 
       girarIzquierda(vel);
       Serial.println("Volante izquierda");
     } 
