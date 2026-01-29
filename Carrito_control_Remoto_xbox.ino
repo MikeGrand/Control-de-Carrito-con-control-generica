@@ -11,7 +11,7 @@ const int IN4 = 32;
 const int pwmFreq = 20000;
 const int pwmRes = 8;
 const int pwmChannelA = 0; 
-const int pwmChannelB = 1; // Motor volante
+const int pwmChannelB = 1; 
 
 GamepadPtr myGamepad;
 
@@ -48,7 +48,6 @@ void setup() {
   ledcWrite(pwmChannelB, 0);
 }
 
-//Funciones motor principal
 void moverAdelante(int vel) {
   digitalWrite(IN1, HIGH);
   digitalWrite(IN2, LOW);
@@ -67,7 +66,6 @@ void pararMotor() {
   ledcWrite(pwmChannelA, 0);
 }
 
-//Funciones motor volante
 void girarDerecha(int vel) {
   digitalWrite(IN3, HIGH);
   digitalWrite(IN4, LOW);
@@ -90,7 +88,6 @@ void loop() {
   BP32.update();
 
   if (myGamepad && myGamepad->isConnected()) {
-    // --- Motor principal (joystick izquierdo eje Y) ---
     int ly = myGamepad->axisY();
 
     if (ly < -50) { // Adelante
